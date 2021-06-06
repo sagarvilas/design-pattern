@@ -4,12 +4,14 @@ import com.example.pattern.observer.service.api.Publisher;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 @Controller
 @AllArgsConstructor
-public class ApiController {
+@RequestMapping("observer")
+public class ObserverController {
 
     private Publisher messagePublisher;
 
