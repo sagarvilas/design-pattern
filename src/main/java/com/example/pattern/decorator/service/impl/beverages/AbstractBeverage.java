@@ -1,4 +1,4 @@
-package com.example.pattern.decorator.service.impl;
+package com.example.pattern.decorator.service.impl.beverages;
 
 import com.example.pattern.decorator.service.api.Beverage;
 
