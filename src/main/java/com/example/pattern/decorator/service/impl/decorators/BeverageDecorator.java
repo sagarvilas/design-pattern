@@ -9,5 +9,8 @@ public abstract class BeverageDecorator extends AbstractBeverage {
     @Override
     public abstract String getDescription();
 
-    public abstract Beverage setBeverage(Beverage beverage);
+    public final Beverage setBeverage(Beverage beverage){
+        this.beverage = beverage;
+        return this;
+    }
 }
