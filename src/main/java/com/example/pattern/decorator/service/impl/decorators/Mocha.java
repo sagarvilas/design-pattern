@@ -1,11 +1,14 @@
 package com.example.pattern.decorator.service.impl.decorators;
 
 import com.example.pattern.decorator.service.api.Beverage;
+import org.springframework.stereotype.Service;
 
+@Service
 public class Mocha extends BeverageDecorator {
 
-    public Mocha(Beverage beverage) {
+    public Beverage setBeverage(Beverage beverage){
         this.beverage = beverage;
+        return this;
     }
 
     @Override
