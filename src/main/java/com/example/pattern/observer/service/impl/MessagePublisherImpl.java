@@ -2,9 +2,7 @@ package com.example.pattern.observer.service.impl;
 
 import com.example.pattern.observer.service.api.Observer;
 import com.example.pattern.observer.service.api.Publisher;
-import lombok.AllArgsConstructor;
 import lombok.NonNull;
-import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import javax.annotation.PostConstruct;
