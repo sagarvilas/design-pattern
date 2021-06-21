@@ -69,6 +69,7 @@ public abstract class Pizza {
             result.append(pepperoni);
             result.append("\n");
         }
+        result.append("Pizza ID=").append(this.hashCode());
         return result.toString();
     }
 }

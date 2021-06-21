@@ -18,8 +18,8 @@ public class PizzaServiceConfig {
 
     @Bean
     @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-    @Qualifier("ChicagoPizzaVeggies")
-    public List<Veggies> ChicagoPizzaVeggies(List<Veggies> veggies) {
+    @Qualifier("chicagoPizzaVeggies")
+    public List<Veggies> chicagoPizzaVeggies(List<Veggies> veggies) {
         return veggies.stream().filter(x ->
                 chicagoVeggies
                         .contains(x.getClass().getSimpleName().toLowerCase()))
@@ -28,8 +28,8 @@ public class PizzaServiceConfig {
 
     @Bean
     @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
-    @Qualifier("NYPizzaVeggies")
-    public List<Veggies> NYPizzaVeggies(List<Veggies> veggies) {
+    @Qualifier("nYPizzaVeggies")
+    public List<Veggies> nYPizzaVeggies(List<Veggies> veggies) {
         return veggies.stream().filter(x ->
                 NYVeggies
                         .contains(x.getClass().getSimpleName().toLowerCase()))

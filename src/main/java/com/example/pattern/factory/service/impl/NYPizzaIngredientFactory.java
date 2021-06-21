@@ -2,43 +2,43 @@ package com.example.pattern.factory.service.impl;
 
 import com.example.pattern.factory.service.api.PizzaIngredientFactory;
 import com.example.pattern.factory.service.api.ingredient.*;
+import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-@Qualifier("NYPizzaIngredientFactory")
+@Qualifier("nYPizzaIngredientFactory")
 public class NYPizzaIngredientFactory implements PizzaIngredientFactory {
 
-    private Dough thinCrustDough;
-    private Sauce marinaraSauce;
-    private Cheese reggianoCheese;
-    private List<Veggies> NYPizzaVeggies;
-    private Pepperoni slicedPepperoni;
-    private Clams freshClams;
-
+    @Lookup("thinCrustDough")
     public Dough createDough() {
-        return thinCrustDough;
+        return null;
     }
 
+    @Lookup("marinaraSauce")
     public Sauce createSauce() {
-        return marinaraSauce;
+        return null;
     }
 
+    @Lookup("reggianoCheese")
     public Cheese createCheese() {
-        return reggianoCheese;
+        return null;
     }
 
+    @Lookup("nYPizzaVeggies")
     public List<Veggies> createVeggies() {
-        return NYPizzaVeggies;
+        return null;
     }
 
+    @Lookup("slicedPepperoni")
     public Pepperoni createPepperoni() {
-        return slicedPepperoni;
+        return null;
     }
 
+    @Lookup("freshClams")
     public Clams createClam() {
-        return freshClams;
+        return null;
     }
 }

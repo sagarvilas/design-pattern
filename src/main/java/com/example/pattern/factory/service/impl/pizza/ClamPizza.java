@@ -13,8 +13,12 @@ import org.springframework.stereotype.Service;
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 @Setter
 public class ClamPizza extends Pizza {
-	PizzaIngredientFactory ingredientFactory;
+	private PizzaIngredientFactory ingredientFactory;
 
+	public ClamPizza(String name, PizzaIngredientFactory ingredientFactory) {
+		this.name = name;
+		this.ingredientFactory = ingredientFactory;
+	}
 	@Override
 	public void prepare() {
 		System.out.println("Preparing " + name);
@@ -22,6 +26,7 @@ public class ClamPizza extends Pizza {
 		sauce = ingredientFactory.createSauce();
 		cheese = ingredientFactory.createCheese();
 		clam = ingredientFactory.createClam();
+		veggies = ingredientFactory.createVeggies();
 	}
 
 	@Override

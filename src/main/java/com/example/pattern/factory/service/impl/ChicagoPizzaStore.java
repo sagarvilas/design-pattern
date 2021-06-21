@@ -13,7 +13,7 @@ public class ChicagoPizzaStore extends PizzaStore {
     private PizzaIngredientFactory chicagoPizzaIngredientFactory;
 
     protected Pizza createPizza(String item) {
-        Pizza pizza = startPreparing(item, chicagoPizzaIngredientFactory);
+        Pizza pizza = startPreparing(item, " Chicago style", chicagoPizzaIngredientFactory);
         if (null != pizza ) {
             return pizza;
         }

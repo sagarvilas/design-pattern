@@ -1,7 +1,7 @@
 package com.example.pattern.factory.service.impl.pizza;
 
-import com.example.pattern.factory.service.api.pizza.Pizza;
 import com.example.pattern.factory.service.api.PizzaIngredientFactory;
+import com.example.pattern.factory.service.api.pizza.Pizza;
 import lombok.Setter;
 import org.springframework.beans.factory.annotation.Qualifier;
 import org.springframework.beans.factory.config.ConfigurableBeanFactory;
@@ -14,7 +14,12 @@ import org.springframework.stereotype.Service;
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 @Setter
 public class VeggiePizza extends Pizza {
-	PizzaIngredientFactory ingredientFactory;
+	private PizzaIngredientFactory ingredientFactory;
+
+	public VeggiePizza(String name, PizzaIngredientFactory ingredientFactory) {
+		this.name = name;
+		this.ingredientFactory = ingredientFactory;
+	}
 
 	@Override
 	public void prepare() {
