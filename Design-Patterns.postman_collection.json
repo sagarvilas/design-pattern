@@ -1,0 +1,117 @@
+{
+	"info": {
+		"_postman_id": "6bc6ab68-5394-4b52-9c79-8fa061599376",
+		"name": "Design-Patterns",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "decorator",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/decorator/coffee?drink=decaf&extras=milk,sugar",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"decorator",
+						"coffee"
+					],
+					"query": [
+						{
+							"key": "drink",
+							"value": "decaf"
+						},
+						{
+							"key": "extras",
+							"value": "milk,sugar"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "factory",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/factory/pizza?style=nyStyle&type=pepperoniPizza",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"factory",
+						"pizza"
+					],
+					"query": [
+						{
+							"key": "style",
+							"value": "nyStyle"
+						},
+						{
+							"key": "type",
+							"value": "pepperoniPizza"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "observer",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/observer/message?type=hello",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"observer",
+						"message"
+					],
+					"query": [
+						{
+							"key": "type",
+							"value": "hello"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "{{baseUrl}}/strategy/calculate?operation=add&operands=3,5",
+					"host": [
+						"{{baseUrl}}"
+					],
+					"path": [
+						"strategy",
+						"calculate"
+					],
+					"query": [
+						{
+							"key": "operation",
+							"value": "add"
+						},
+						{
+							"key": "operands",
+							"value": "3,5"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
