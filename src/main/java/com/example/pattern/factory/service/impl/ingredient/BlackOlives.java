@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
 public class BlackOlives implements Veggies {
 
     public String toString() {
-        return "Black Olives "+this.hashCode();
+        return "Black Olives " + this.hashCode();
     }
 }

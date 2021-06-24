@@ -35,4 +35,5 @@ public class PizzaServiceConfig {
                         .contains(x.getClass().getSimpleName().toLowerCase()))
                 .collect(Collectors.toList());
     }
+
 }

@@ -31,6 +31,8 @@ public abstract class PizzaStore {
 
     public Pizza startPreparing(String name, String style, PizzaIngredientFactory pizzaIngredientFactory) {
         Pizza pizza = null;
+        // You: This does not look very good
+        // Me: Yea, I know, please let me know if there is a better way
         if ("cheesePizza".equalsIgnoreCase(name)) {
             pizza = getCheesePizza(style + " Cheese Pizza", pizzaIngredientFactory);
         } else if ("clamPizza".equalsIgnoreCase(name)) {

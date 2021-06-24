@@ -29,8 +29,4 @@ public class PepperoniPizza extends Pizza {
 		pepperoni = ingredientFactory.createPepperoni();
 	}
 
-	@Override
-	public void setName(String name) {
-		this.name = name + "Pepperoni pizza";
-	}
 }

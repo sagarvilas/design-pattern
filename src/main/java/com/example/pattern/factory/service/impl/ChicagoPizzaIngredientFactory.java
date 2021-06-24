@@ -8,8 +8,7 @@ import org.springframework.stereotype.Service;
 
 import java.util.List;
 
-@Service
-@Qualifier("chicagoPizzaIngredientFactory")
+@Service("chicagoPizzaIngredientFactory")
 public class ChicagoPizzaIngredientFactory implements PizzaIngredientFactory {
 
     @Lookup("thickCrustDough")

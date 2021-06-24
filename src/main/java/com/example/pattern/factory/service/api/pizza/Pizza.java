@@ -1,6 +1,5 @@
 package com.example.pattern.factory.service.api.pizza;
 
-import com.example.pattern.factory.service.api.PizzaIngredientFactory;
 import com.example.pattern.factory.service.api.ingredient.*;
 
 import java.util.List;
@@ -29,13 +28,10 @@ public abstract class Pizza {
         System.out.println("Place pizza in official PizzaStore box");
     }
 
-    public abstract void setName(String name);
-
     protected String getName() {
         return name;
     }
 
-    public abstract void setIngredientFactory(PizzaIngredientFactory ingredientFactory);
 
     public String toString() {
         StringBuffer result = new StringBuffer();

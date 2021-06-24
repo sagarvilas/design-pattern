@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class SlicedPepperoni implements Pepperoni {
 
-	public String toString() {
-		return "Sliced Pepperoni "+this.hashCode();
-	}
+    public String toString() {
+        return "Sliced Pepperoni " + this.hashCode();
+    }
 }

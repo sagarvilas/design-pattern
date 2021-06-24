@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class FrozenClams implements Clams {
 
-	public String toString() {
-		return "Frozen Clams from Chesapeake Bay "+this.hashCode();
-	}
+    public String toString() {
+        return "Frozen Clams from Chesapeake Bay " + this.hashCode();
+    }
 }

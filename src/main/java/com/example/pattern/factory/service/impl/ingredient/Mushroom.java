@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class Mushroom implements Veggies {
 
-	public String toString() {
-		return "Mushrooms "+this.hashCode();
-	}
+    public String toString() {
+        return "Mushrooms " + this.hashCode();
+    }
 }

@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class MarinaraSauce implements Sauce {
-	public String toString() {
-		return "Marinara Sauce "+this.hashCode();
-	}
+    public String toString() {
+        return "Marinara Sauce " + this.hashCode();
+    }
 }

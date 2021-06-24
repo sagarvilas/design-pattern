@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class FreshClams implements Clams {
 
-	public String toString() {
-		return "Fresh Clams from Long Island Sound "+this.hashCode();
-	}
+    public String toString() {
+        return "Fresh Clams from Long Island Sound " + this.hashCode();
+    }
 }

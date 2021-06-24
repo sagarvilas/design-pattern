@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class PlumTomatoSauce implements Sauce {
-	public String toString() {
-		return "Tomato sauce with plum tomatoes "+this.hashCode();
-	}
+    public String toString() {
+        return "Tomato sauce with plum tomatoes " + this.hashCode();
+    }
 }

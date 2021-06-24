@@ -8,7 +8,7 @@ import org.springframework.stereotype.Service;
 @Service
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class ThickCrustDough implements Dough {
-	public String toString() {
-		return "ThickCrust style extra thick crust dough "+this.hashCode();
-	}
+    public String toString() {
+        return "ThickCrust style extra thick crust dough " + this.hashCode();
+    }
 }

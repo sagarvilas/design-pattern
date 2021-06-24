@@ -10,6 +10,6 @@ import org.springframework.stereotype.Service;
 public class Eggplant implements Veggies {
 
     public String toString() {
-        return "Eggplant "+this.hashCode();
+        return "Eggplant " + this.hashCode();
     }
 }

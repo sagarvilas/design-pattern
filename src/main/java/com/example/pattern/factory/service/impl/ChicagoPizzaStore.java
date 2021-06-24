@@ -1,16 +1,16 @@
 package com.example.pattern.factory.service.impl;
 
-import com.example.pattern.factory.service.api.pizza.Pizza;
 import com.example.pattern.factory.service.api.PizzaIngredientFactory;
+import com.example.pattern.factory.service.api.pizza.Pizza;
 import com.example.pattern.factory.service.api.pizza.PizzaStore;
-import lombok.AllArgsConstructor;
+import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 @Service("chicagoStyle")
-@AllArgsConstructor
+@RequiredArgsConstructor
 public class ChicagoPizzaStore extends PizzaStore {
 
-    private PizzaIngredientFactory chicagoPizzaIngredientFactory;
+    private final PizzaIngredientFactory chicagoPizzaIngredientFactory;
 
     protected Pizza createPizza(String item) {
         Pizza pizza = startPreparing(item, " Chicago style", chicagoPizzaIngredientFactory);

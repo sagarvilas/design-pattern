@@ -29,8 +29,4 @@ public class ClamPizza extends Pizza {
 		veggies = ingredientFactory.createVeggies();
 	}
 
-	@Override
-	public void setName(String name) {
-		this.name = name + "Clam pizza";
-	}
 }

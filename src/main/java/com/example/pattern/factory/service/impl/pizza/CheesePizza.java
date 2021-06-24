@@ -30,8 +30,4 @@ public class CheesePizza extends Pizza {
         veggies = ingredientFactory.createVeggies();
     }
 
-    @Override
-    public void setName(String name) {
-        this.name = name + " Cheese pizza";
-    }
 }

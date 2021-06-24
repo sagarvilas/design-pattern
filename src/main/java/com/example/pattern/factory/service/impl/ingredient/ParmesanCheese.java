@@ -9,7 +9,7 @@ import org.springframework.stereotype.Service;
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class ParmesanCheese implements Cheese {
 
-	public String toString() {
-		return "Shredded Parmesan "+this.hashCode();
-	}
+    public String toString() {
+        return "Shredded Parmesan " + this.hashCode();
+    }
 }

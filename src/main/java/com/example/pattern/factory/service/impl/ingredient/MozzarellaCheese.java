@@ -10,7 +10,7 @@ import org.springframework.stereotype.Service;
 @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)
 public class MozzarellaCheese implements Cheese {
 
-	public String toString() {
-		return "Shredded Mozzarella "+this.hashCode();
-	}
+    public String toString() {
+        return "Shredded Mozzarella " + this.hashCode();
+    }
 }
