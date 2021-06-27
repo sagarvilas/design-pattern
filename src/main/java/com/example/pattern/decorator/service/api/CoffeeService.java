@@ -4,5 +4,5 @@ import java.util.List;
 
 public interface CoffeeService {
 
-    String cost(String drink, List<String> extras);
+    String getCost(String drink, List<String> extras);
 }

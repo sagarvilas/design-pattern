@@ -13,8 +13,8 @@ import java.util.stream.Collectors;
 @Configuration
 public class PizzaServiceConfig {
 
-    List<String> chicagoVeggies = List.of("blackolives", "spinach", "eggplant");
-    List<String> NYVeggies = List.of("garlic", "onion", "mushroom", "redpepper");
+    private final List<String> chicagoVeggies = List.of("blackolives", "spinach", "eggplant");
+    private final List<String> NYVeggies = List.of("garlic", "onion", "mushroom", "redpepper");
 
     @Bean
     @Scope(value = ConfigurableBeanFactory.SCOPE_PROTOTYPE)

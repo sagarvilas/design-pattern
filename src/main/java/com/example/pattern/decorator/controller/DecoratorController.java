@@ -1,7 +1,6 @@
 package com.example.pattern.decorator.controller;
 
 import com.example.pattern.decorator.service.api.CoffeeService;
-import lombok.NonNull;
 import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -16,11 +15,11 @@ import java.util.List;
 @RequiredArgsConstructor
 public class DecoratorController {
 
-    private @NonNull CoffeeService coffeeService;
+    private final CoffeeService coffeeService;
 
     @GetMapping("coffee")
     public @ResponseBody
     String getPrice(@RequestParam String drink, @RequestParam List<String> extras) {
-        return coffeeService.cost(drink, extras);
+        return coffeeService.getCost(drink, extras);
     }
 }

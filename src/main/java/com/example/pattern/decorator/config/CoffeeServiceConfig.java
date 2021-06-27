@@ -20,6 +20,7 @@ public class CoffeeServiceConfig {
     public Map<String, Beverage> beverageMap(List<Beverage> beverageList) {
         return beverageList
                 .stream()
+                // Since decorators are also beverage filter them out.
                 .filter(x -> !(x instanceof BeverageDecorator))
                 .collect(Collectors
                         .toMap(x -> x.getClass().getSimpleName().toLowerCase(), Function.identity()));

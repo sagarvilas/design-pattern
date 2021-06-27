@@ -1,12 +1,13 @@
 package com.example.pattern.factory.service.api.pizza;
 
 import com.example.pattern.factory.service.api.ingredient.*;
+import lombok.extern.slf4j.Slf4j;
 
 import java.util.List;
 
+@Slf4j
 public abstract class Pizza {
     protected String name;
-
     protected Dough dough;
     protected Sauce sauce;
     protected List<Veggies> veggies;
@@ -17,15 +18,15 @@ public abstract class Pizza {
     public abstract void prepare();
 
     protected void bake() {
-        System.out.println("Bake for 25 minutes at 350");
+        log.info("Bake for 25 minutes at 350");
     }
 
     protected void cut() {
-        System.out.println("Cutting the pizza into diagonal slices");
+        log.info("Cutting the pizza into diagonal slices");
     }
 
     protected void box() {
-        System.out.println("Place pizza in official PizzaStore box");
+        log.info("Place pizza in official PizzaStore box");
     }
 
     protected String getName() {

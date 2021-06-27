@@ -18,7 +18,7 @@ public class CoffeeServiceImpl implements CoffeeService {
     private final Map<String, BeverageDecorator> condimentsMap;
 
     @Override
-    public String cost(String drink, List<String> extras) {
+    public String getCost(String drink, List<String> extras) {
         Beverage newDrink = beverageMap.getOrDefault(drink.toLowerCase(), null);
 
         if (newDrink == null)

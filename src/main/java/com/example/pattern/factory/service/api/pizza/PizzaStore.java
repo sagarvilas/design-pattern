@@ -1,10 +1,12 @@
 package com.example.pattern.factory.service.api.pizza;
 
 import com.example.pattern.factory.service.api.PizzaIngredientFactory;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Lookup;
 import org.springframework.stereotype.Component;
 
 @Component
+@Slf4j
 public abstract class PizzaStore {
 
     protected abstract Pizza createPizza(String item);
@@ -47,7 +49,7 @@ public abstract class PizzaStore {
 
     public Pizza orderPizza(String type) {
         Pizza pizza = createPizza(type);
-        System.out.println("--- Making a " + pizza.getName() + " ---");
+        log.info("--- Making a " + pizza.getName() + " ---");
         pizza.prepare();
         pizza.bake();
         pizza.cut();
